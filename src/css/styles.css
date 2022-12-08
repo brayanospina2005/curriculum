@@ -58,7 +58,6 @@ main{
 .description__content{
   margin-bottom: 20px;
   padding-right: 20px;
-  text-align: justify;
 }
 .description__content  h3{
   font-weight: 200;
@@ -78,13 +77,17 @@ main{
 .description__title p{
   font-weight: 600;
 }
-
-.description__content ul{
+ ul{
   margin-left: 15px;
+  line-height: 26px;
 }
 
 .dates__content{
   margin-left: 30px;
+  margin-top: 3rem;
+}
+.dates__content li{
+  list-style-type: square;
 }
 .dates__content .date__title{
   margin-bottom: 20px;
@@ -94,4 +97,29 @@ main{
 }
 .dates__content span{
   color: #8e929a;
+}
+.dates__progress{
+  margin-bottom: 1rem;
+}
+.progress{
+  background-color: #8e929a;
+  width: 100%;
+  height: 10px;
+}
+
+.progress .barra{
+  height: 10px;
+  background-color: rgb(9, 19, 62);
+}
+
+/* mediaqueries */
+
+@media only screen and (max-width:768px) {
+  body{
+    padding: 0%;
+
+  }
+  .socials, .container{
+    flex-direction: column;
+  }
 }
